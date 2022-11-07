@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AOX-6a-IG3" customClass="CustomTableViewCell" customModule="PersonsList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AOX-6a-IG3" id="QcG-7a-MkI">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="7Z5-cg-Cfg" userLabel="imageBackground">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="271.66666666666669"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X0a-Yd-OxP">
+                        <rect key="frame" x="312.00000000000006" y="0.0" width="997.33333333333348" height="272"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="X0a-Yd-OxP" secondAttribute="height" multiplier="11:3" id="EqN-YF-p8Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="QXD-65-bee">
+                        <rect key="frame" x="21" y="11" width="267" height="250"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="QXD-65-bee" secondAttribute="height" multiplier="1:1" constant="17" id="ULP-DT-Bd5"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7Z5-cg-Cfg" secondAttribute="trailing" id="2xF-pA-hnK"/>
+                    <constraint firstAttribute="bottom" secondItem="QXD-65-bee" secondAttribute="bottom" constant="10.5" id="A5X-gH-ffu"/>
+                    <constraint firstItem="7Z5-cg-Cfg" firstAttribute="top" secondItem="QcG-7a-MkI" secondAttribute="top" id="BHq-42-Pef"/>
+                    <constraint firstItem="QXD-65-bee" firstAttribute="top" secondItem="QcG-7a-MkI" secondAttribute="top" constant="11" id="R4A-Ra-Uci"/>
+                    <constraint firstAttribute="trailing" secondItem="X0a-Yd-OxP" secondAttribute="trailing" id="aLM-J8-SNn"/>
+                    <constraint firstAttribute="bottom" secondItem="X0a-Yd-OxP" secondAttribute="bottom" constant="-0.5" id="aLt-9N-dR3"/>
+                    <constraint firstAttribute="bottom" secondItem="7Z5-cg-Cfg" secondAttribute="bottom" id="fNL-G0-oxh"/>
+                    <constraint firstItem="QXD-65-bee" firstAttribute="leading" secondItem="QcG-7a-MkI" secondAttribute="leading" constant="21" id="h3s-bh-diB"/>
+                    <constraint firstItem="X0a-Yd-OxP" firstAttribute="top" secondItem="QcG-7a-MkI" secondAttribute="top" id="hj0-0h-urD"/>
+                    <constraint firstItem="X0a-Yd-OxP" firstAttribute="leading" secondItem="QXD-65-bee" secondAttribute="trailing" constant="24" id="szJ-ht-EqO"/>
+                    <constraint firstItem="7Z5-cg-Cfg" firstAttribute="leading" secondItem="QcG-7a-MkI" secondAttribute="leading" id="vJ0-ff-v6Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="1Ih-tz-vzJ"/>
+            <connections>
+                <outlet property="nameLabel" destination="X0a-Yd-OxP" id="fOV-GZ-dOZ"/>
+                <outlet property="pictureImageView" destination="QXD-65-bee" id="08c-d9-yCb"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="0" width="250" height="250"/>
+        <image name="cellBackGround" width="530" height="107.5"/>
+    </resources>
+</document>
